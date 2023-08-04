@@ -10,21 +10,21 @@ const Navbar = () => {
       <header className="header">
         <div className="container d_flex">
             <div className="categories d_flex">
-                <span className="fas fa-border-all"></span>
+                <span className="bx bx-border-all"></span>
                 <h4>
-                    Categories <i className="fa fa-chevron-down"></i>
+                    Categories <i className="bx bxs-chevron-down"></i>
                 </h4>
             </div>
 
             <div className="navlink">
-                <ul className="nav">
+                <ul className={MobileMenu ? "nav-links-MobileMenu" : " link f_flex capitalize"} onClick={()=> setMobileMenu(false)}>
                     <li>
                         <Link to="/">home</Link>
                     </li>
                     <li>
                         <Link to="/pages">pages</Link>
                     </li>
-                    <li>
+                    <li> 
                         <Link to="/user">user</Link>
                     </li>
                     <li>
@@ -40,8 +40,7 @@ const Navbar = () => {
 
                 <button className="toggle" onClick={()=> setMobileMenu(!MobileMenu)}>
                     {
-                        MobileMenu ? <i className="fas fa-times close home-bth"></i>:
-                        <i className="fas fa-bars open"></i>
+                        MobileMenu ? <i className="bx bx-x close home-bth"></i>: <i className="bx bx-menu open"></i>
                     }
                 </button>
             </div>
