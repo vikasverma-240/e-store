@@ -53,7 +53,7 @@ const FlashCard = ({ productItems, addToCart }) => {
                                     <img src={ImageSrc1} alt="flashDeals" srcSet="" width={200} height={200} />
                                     <div className="product-like">
                                         <label htmlFor="">0</label><br />
-                                        <i className="bx bxs-home-heart" onClick={increment}></i>
+                                        <i className="bx bx-heart" onClick={increment}></i>
                                     </div>
                                 </div>
                                 <div className="product-details">

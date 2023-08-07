@@ -4,6 +4,7 @@ import { Route, Routes } from 'react-router-dom';
 import Pages from './pages/Pages';
 import FlashData from './components/FlashDeals/FlashData';
 import { useState } from 'react';
+import Cart from './common/cart/Cart';
 
 function App() {
   // step 1: fetch data from database
@@ -20,10 +21,11 @@ function App() {
   }
   return (
     <>
-    <Header/>
+    <Header cartItem = {cartItem}/>
     
       <Routes>
-        <Route exact path='/' element={<Pages productItems = {productItems} />}></Route>
+        <Route exact path='/' element={<Pages productItems = {productItems}  addToCart={addToCart}/>}></Route>
+        <Route exact path='/cart' element={<Cart cartItem = {cartItem}  addToCart={addToCart}/>}></Route>
       </Routes>
     </>
   );
