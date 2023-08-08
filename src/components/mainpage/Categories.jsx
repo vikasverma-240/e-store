@@ -1,61 +1,49 @@
 import React from 'react';
-import catImage1 from "../../images/categories/cat1.png";
-import catImage2 from "../../images/categories/cat2.png";
-import catImage3 from "../../images/categories/cat3.png";
-import catImage4 from "../../images/categories/cat4.png";
-import catImage5 from "../../images/categories/cat5.png";
-import catImage6 from "../../images/categories/cat6.png";
-import catImage7 from "../../images/categories/cat7.png";
-import catImage8 from "../../images/categories/cat8.png";
-import catImage9 from "../../images/categories/cat9.png";
-import catImage10 from "../../images/categories/cat10.png";
-import catImage11 from "../../images/categories/cat11.png";
-
 const Categories = () => {
 
     const data = [
         {
-            cateImg: catImage1,
+            cateImg: "./images/category/cat1.png",
             cateName: "Fashion",
         },
         {
-            cateImg: catImage2,
+            cateImg: "./images/category/cat2.png",
             cateName: "Electronic",
         },
         {
-            cateImg: catImage3,
+            cateImg: "./images/category/cat3.png",
             cateName: "Cars",
         },
         {
-            cateImg: catImage4,
+            cateImg: "./images/category/cat4.png",
             cateName: "Home & Garden",
         },
         {
-            cateImg: catImage5,
+            cateImg: "./images/category/cat5.png",
             cateName: "Gifts",
         },
         {
-            cateImg: catImage6,
+            cateImg: "./images/category/cat6.png",
             cateName: "Music",
         },
         {
-            cateImg: catImage7,
+            cateImg: "./images/category/cat7.png",
             cateName: "Health  & Beauty",
         },
         {
-            cateImg: catImage8,
+            cateImg: "./images/category/cat8.png",
             cateName: "Pets",
         },
         {
-            cateImg: catImage9,
+            cateImg: "./images/category/cat9.png",
             cateName: "Baby Toys",
         },
         {
-            cateImg: catImage10,
+            cateImg: "./images/category/cat10.png",
             cateName: "Groceries",
         },
         {
-            cateImg: catImage11,
+            cateImg: "./images/category/cat11.png",
             cateName: "Books",
         },
     ]

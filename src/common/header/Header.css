@@ -1,3 +1,4 @@
+@import url('../../App.css');
 /* --------------------head------------------------ */
 .head{
     background-color: #0f3460;
@@ -36,6 +37,7 @@
 .search-box{
     width: 80%;
     border: 2px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50px;
 }
 
 .search-box i{
@@ -75,7 +77,7 @@
     height: 20px;
     border-radius: 50%;
     text-align: center;
-    background-color: #e94560;
+    background-color: var(--primary-color);
     font-size: 12px;
     color: #fff;
 }
@@ -129,7 +131,7 @@ header ul li a{
 }
 
 header ul li a:hover{
-    color: #e94560;
+    color: var(--primary-color);
 }
 
 .open{
@@ -180,7 +182,7 @@ header ul li a:hover{
         position:absolute;
         top: 35px;
         right: 20px;
-        color: #ff014f;
+        color: var(--primary-color);
         display: block;
         font-size: 25px;
         z-index: 999;
@@ -195,7 +197,7 @@ header ul li a:hover{
 
     .close .home-btn{
         background: linear-gradient(145deg, #e2e8ec, #ffffff);
-        color:#ff014f;
+        color: var(--primary-color);
         border-radius: 50%;
     }
 } 
